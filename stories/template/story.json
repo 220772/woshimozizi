@@ -1,699 +1,686 @@
 {
   "scriptVersion": 1,
-  "id": "ui-test-phone-v2",
-  "title": "捡手机",
-  "description": "仅用于界面测试，不含剧情",
-  "revision": 2,
+  "id": "late-heartbeat-zhangzimo",
+  "title": "迟来的心动，终落你怀中",
+  "description": "你在初夏的太原街头捡到一部手机，机主是音乐人张子墨。翻看他的微信、朋友圈、相册、备忘录和音乐，你会拼凑出一段藏了整整七年的双向暗恋——一场无稽的误会，让两个互相喜欢的人错过了那么久，直到今天，他终于要去见她，把话说清楚。",
+  "revision": 1,
   "phone": {
-    "owner": "机主",
-    "date": "2026-10-25",
-    "time": "09:41",
-    "battery": 94,
-    "network": "5G",
-    "wallpaper": "apple-wwdc26"
+    "owner": "张子墨",
+    "date": "2026-05-20",
+    "time": "16:30",
+    "passcode": "",
+    "wallpaper": "sage",
+    "theme": "light",
+    "battery": 12,
+    "network": "5G"
   },
   "installedApps": [
-    "appstore",
-    {
-      "id": "wechat",
-      "name": "微信",
-      "installed": true,
-      "visible": true,
-      "dock": false,
-      "folder": "",
-      "icon": ""
-    },
-    {
-      "id": "douyin",
-      "name": "抖音",
-      "installed": true,
-      "visible": true,
-      "dock": false,
-      "folder": "",
-      "icon": ""
-    },
     "phone",
     "messages",
     "contacts",
     "photos",
-    {
-      "id": "camera",
-      "name": "相机",
-      "installed": true,
-      "visible": true,
-      "dock": true,
-      "folder": "",
-      "icon": ""
-    },
-    "safari",
     "notes",
-    "calendar",
-    "mail",
-    "clock",
-    "reminders",
-    "files",
     "music",
+    "calendar",
+    "reminders",
+    "camera",
+    "wechat",
+    "mail",
     "maps",
-    "weather",
-    "wallet",
-    "health",
-    "find",
-    "calculator",
-    "settings",
-    "qq",
-    "weibo",
-    "redbook",
-    "bilibili",
-    "alipay",
-    "taobao",
-    "netease",
-    "delivery",
-    "forum",
-    "whatsapp",
-    "instagram",
-    "tiktok",
-    "twitter",
-    "telegram",
-    "discord",
-    "youtube",
-    "line",
-    "snapchat",
-    "facebook",
-    "messenger",
-    "reddit",
-    "spotify",
-    "netflix",
-    "pinterest",
-    "threads",
-    "kakao"
+    "safari",
+    "clock",
+    "settings"
   ],
   "contacts": [
     {
-      "id": "test-contact",
-      "name": "测试联系人",
-      "phone": "",
-      "bio": "这是一条测试内容。"
+      "id": "me",
+      "name": "小水",
+      "phone": "13800001234",
+      "bio": "张子墨高中同班同学，暗恋了七年的女孩。故事里的'我'（你可在此改名）。"
+    },
+    {
+      "id": "friend1",
+      "name": "朋友1",
+      "phone": "13800002101",
+      "bio": "隔壁班的女生，高中时曾向他请教音乐。当年误会的源头。"
+    },
+    {
+      "id": "friend2",
+      "name": "朋友2",
+      "phone": "13800002102",
+      "bio": "高中同班男生，小水常和他讨论题目说笑。让他偷偷吃醋的人。"
+    },
+    {
+      "id": "friend3",
+      "name": "朋友3",
+      "phone": "13800002103",
+      "bio": "张子墨的死党，他常向其吐槽、撒娇，也最爱听他念叨小水。"
     }
   ],
   "chats": [
     {
-      "id": "test-chat-messages",
-      "app": "messages",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
-      "messages": [
-        {
-          "id": "test-message-messages",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
-        }
-      ]
-    },
-    {
-      "id": "test-chat-wechat",
+      "id": "chat-me",
       "app": "wechat",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
+      "title": "小水",
+      "participants": ["me", "owner"],
       "messages": [
         {
-          "id": "test-message-wechat",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
-        }
-      ]
-    },
-    {
-      "id": "test-chat-qq",
-      "app": "qq",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
-      "messages": [
-        {
-          "id": "test-message-qq",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
-        }
-      ]
-    },
-    {
-      "id": "test-chat-whatsapp",
-      "app": "whatsapp",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
-      "messages": [
-        {
-          "id": "test-message-whatsapp",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
-        }
-      ]
-    },
-    {
-      "id": "test-chat-telegram",
-      "app": "telegram",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
-      "messages": [
-        {
-          "id": "test-message-telegram",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
-        }
-      ]
-    },
-    {
-      "id": "test-chat-discord",
-      "app": "discord",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
-      "messages": [
-        {
-          "id": "test-message-discord",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
-        }
-      ]
-    },
-    {
-      "id": "test-chat-line",
-      "app": "line",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
-      "messages": [
-        {
-          "id": "test-message-line",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
-        }
-      ]
-    },
-    {
-      "id": "test-chat-messenger",
-      "app": "messenger",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
-      "messages": [
-        {
-          "id": "test-message-messenger",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
-        }
-      ]
-    },
-    {
-      "id": "test-chat-kakao",
-      "app": "kakao",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
-      "messages": [
-        {
-          "id": "test-message-kakao",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
+          "id": "wx-me-1",
+          "body": "到甜品店了吗？我提前到了，给你点了你最爱的芝士蛋糕🍰",
+          "senderId": "owner"
         },
         {
-          "id": "test-reply-kakao",
-          "body": "这是一条测试回复。",
+          "id": "wx-me-2",
+          "body": "马上到！今天太原的风好温柔。",
+          "senderId": "me"
+        },
+        {
+          "id": "wx-me-3",
+          "body": "想起高中那会儿，我也总爱坐你旁边，跟你碎碎念今天的香水、今天的旋律。",
+          "senderId": "owner"
+        },
+        {
+          "id": "wx-me-4",
+          "body": "你那时候话真的很多哈哈，还老臭屁耍帅。",
+          "senderId": "me"
+        },
+        {
+          "id": "wx-me-5",
+          "body": "因为那时候，我只想和你一个人说话啊。（后来才知道，你也只喜欢我）",
+          "senderId": "owner"
+        },
+        {
+          "id": "wx-me-6",
+          "body": "手机快没电了，先不说了，见面聊。今天，一定要把话说清楚。",
+          "senderId": "owner"
+        }
+      ]
+    },
+    {
+      "id": "chat-friend1",
+      "app": "wechat",
+      "title": "朋友1",
+      "participants": ["friend1", "owner"],
+      "messages": [
+        {
+          "id": "wx-f1-1",
+          "body": "学长，当年那个编曲作业我还有点懵，多亏你课间一遍遍教我。",
+          "senderId": "friend1"
+        },
+        {
+          "id": "wx-f1-2",
+          "body": "小事，你后来不也混得不错。",
+          "senderId": "owner"
+        },
+        {
+          "id": "wx-f1-3",
+          "body": "对了，高中那些传我俩的八卦你别放心上哈，纯同学关系。",
+          "senderId": "friend1"
+        },
+        {
+          "id": "wx-f1-4",
+          "body": "早翻篇了。那时候，我眼里只有另一个人。",
+          "senderId": "owner"
+        }
+      ]
+    },
+    {
+      "id": "chat-friend2",
+      "app": "wechat",
+      "title": "朋友2",
+      "participants": ["friend2", "owner"],
+      "messages": [
+        {
+          "id": "wx-f2-1",
+          "body": "今天又看到你和'小水'讨论题目笑得开心，老张你酸不酸。",
+          "senderId": "friend2"
+        },
+        {
+          "id": "wx-f2-2",
+          "body": "没有。",
+          "senderId": "owner"
+        },
+        {
+          "id": "wx-f2-3",
+          "body": "嘴硬。全班都知道你俩互相喜欢，就你俩自己不信。",
+          "senderId": "friend2"
+        },
+        {
+          "id": "wx-f2-4",
+          "body": "…她喜欢的是你这种爱聊天的吧。",
+          "senderId": "owner"
+        },
+        {
+          "id": "wx-f2-5",
+          "body": "想多了，她就拿我当同桌。真要喜欢，轮得到你在这闷着？",
+          "senderId": "friend2"
+        }
+      ]
+    },
+    {
+      "id": "chat-friend3",
+      "app": "wechat",
+      "title": "朋友3",
+      "participants": ["friend3", "owner"],
+      "messages": [
+        {
+          "id": "wx-f3-1",
+          "body": "你又对着人家朋友圈发呆了？第几次了今天。",
+          "senderId": "friend3"
+        },
+        {
+          "id": "wx-f3-2",
+          "body": "她这次发的狗狗好可爱，像豆芽。我忍不住看了十几遍。",
+          "senderId": "owner"
+        },
+        {
+          "id": "wx-f3-3",
+          "body": "你暗恋人家七年了，能不能主动一次？",
+          "senderId": "friend3"
+        },
+        {
+          "id": "wx-f3-4",
+          "body": "我怕她只当我是同学…怕她喜欢的是别人。",
+          "senderId": "owner"
+        },
+        {
+          "id": "wx-f3-5",
+          "body": "你那个加密备忘录的密码，不会还是 1001 吧？",
+          "senderId": "friend3"
+        },
+        {
+          "id": "wx-pw-2",
+          "body": "对，就设的 1001。谁让她是我心动的开始。那里面写的，都是不敢说出口的话。",
+          "senderId": "owner"
+        }
+      ]
+    },
+    {
+      "id": "chat-sms",
+      "app": "messages",
+      "title": "小水",
+      "participants": ["me", "owner"],
+      "messages": [
+        {
+          "id": "sms-1",
+          "body": "到太原了，打车去甜品店，十分钟左右到。",
+          "senderId": "me"
+        },
+        {
+          "id": "sms-2",
+          "body": "好，我在这儿等你。今天，把藏了七年的话说出口。",
           "senderId": "owner"
         }
       ]
     }
   ],
   "content": {
-    "phone": [
-      {
-        "id": "test-item-phone",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "contacts": [
-      {
-        "id": "test-item-contacts",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
     "photos": [
       {
-        "id": "test-item-photos",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "camera": [
+        "id": "photo-classroom",
+        "title": "高中教室的午后",
+        "body": "阳光铺在课桌上，他坐在我斜前方，耳机线垂在校服领口，袖口是清冽的香水味。那时候我还不知道，他会记住我的一切小习惯。",
+        "kind": "text"
+      },
       {
-        "id": "test-item-camera",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "safari": [
+        "id": "photo-linesdog",
+        "title": "线条小狗周边",
+        "body": "书架上挤满了线条小狗的摆件和挂件。他说这种傻乎乎的小狗，像极了他想守护的那份温柔。",
+        "kind": "text"
+      },
       {
-        "id": "test-item-safari",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
+        "id": "photo-cake",
+        "title": "芝士蛋糕与巧克力",
+        "body": "甜品店的招牌。他爱吃芝士蛋糕，也爱巧克力，每次都多买一份说'给你留的'。",
+        "kind": "text"
+      },
+      {
+        "id": "photo-perfume",
+        "title": "香水收藏柜",
+        "body": "一整面柜子的香水，小众又特别。他从小偏爱各种味道，说气味是记忆的开关。",
+        "kind": "text"
+      },
+      {
+        "id": "photo-douya",
+        "title": "小狗豆芽",
+        "body": "家里的小狗豆芽，软乎乎一团。他偶尔晒它，配文永远是'像你一样可爱'。",
+        "kind": "text"
+      },
+      {
+        "id": "photo-stage",
+        "title": "《登陆日》舞台",
+        "body": "聚光灯下，那个青涩的高中少年长成了温柔耀眼的艺人。台下的我，看完了他每一场。",
+        "kind": "text"
+      },
+      {
+        "id": "photo-together",
+        "title": "重逢那天的合照",
+        "body": "初夏的太原，甜品店窗边。两个人笑得毫无阴霾。原来错过的七年，终于在此刻圆满。",
         "kind": "text",
-        "meta": {}
+        "hidden": true
       }
     ],
     "notes": [
       {
-        "id": "test-item-notes",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "calendar": [
+        "id": "note-highschool",
+        "title": "高中三年",
+        "body": "她坐我旁边，安静内敛，和我这个话痨截然不同。\n我记住了她爱吃芝士蛋糕和巧克力，怕虫子，喜欢线条小狗；记住了她打游戏超强、踢球时肆意张扬的模样。\n我总爱凑过去碎碎念，分享新入手的香水，吐槽队友，哼刚写的旋律。我对她格外照顾，事事迁就，没有半点爹味。\n可我不敢说。她那么好，我以为她不会注意到普通的我。",
+        "kind": "note"
+      },
       {
-        "id": "test-item-calendar",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "mail": [
+        "id": "note-misunderstanding",
+        "title": "误会与沉默",
+        "body": "高二那年，班里起哄说我和隔壁班的朋友1走得很近。她每次撞见我们说话，眼里的光就暗下去。\n她不知道，那只是普通的同学请教。\n而我，也因为她总跟同桌的朋友2讨论题目、说笑打闹，偷偷吃醋，闷着嘴装高冷。\n两个满心都是彼此的人，揣着一模一样的暗恋，隔着一场无中生有的误会，互相揣测，互相退缩。",
+        "kind": "note"
+      },
       {
-        "id": "test-item-mail",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "clock": [
+        "id": "note-years",
+        "title": "大学四年",
+        "body": "我们在两座城市，没有频繁联系，却从未真正断联。\n我成了音乐人，发了单曲和专辑，上了《登陆日》的舞台。她看着我闪闪发光，我也默默点开她的每一条动态。\n她的每一条朋友圈，我从来第一时间点赞、评论。我们像最熟悉的陌生人，隔着屏幕遥遥相望，把遗憾藏了一年又一年。\n——翻到这里，相册里有一张合照，终于敢让你看见。",
+        "kind": "note"
+      },
       {
-        "id": "test-item-clock",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "reminders": [
-      {
-        "id": "test-item-reminders",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "files": [
-      {
-        "id": "test-item-files",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
+        "id": "note-reunion",
+        "title": "重逢·告白（加密）",
+        "body": "今天在太原见到她了。四目相对的一瞬，时间倒流回那个蝉鸣的高中教室。\n是她先开口的，眼眶发红：'我也喜欢你啊，张子墨。我以为你喜欢隔壁班的女生。'\n我整个人僵住，然后低笑出声——原来不是我的一厢情愿，原来我们错过了整整七年。\n我对她说：'笨蛋，白白错过了这么久。'\n所有的误会、所有的意难平，在这一刻烟消云散。我们顺理成章地在一起了。\n那个爱香水、爱撒娇、专一又热烈的太原少年，终于坚定地走向了她。",
+        "kind": "note",
+        "hidden": true,
+        "password": "1001"
       }
     ],
     "music": [
       {
-        "id": "test-item-music",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
+        "id": "music-song1",
+        "title": "单曲《初遇街口》",
+        "body": "写给那个总在我朋友圈出现、却从不敢主动找我聊天的女孩。'晚风岁岁年年，心动岁岁年年。'",
+        "kind": "text"
+      },
+      {
+        "id": "music-album",
+        "title": "专辑《无以言表的日子里》",
+        "body": "收录了七年里写给同一个人的歌。第十二首，藏着她的名字缩写。",
+        "kind": "text"
+      },
+      {
+        "id": "music-show",
+        "title": "《登陆日》舞台现场",
+        "body": "那首没署名的歌，是全场大合唱里我最私心的一首。台下有你，我才知道。",
+        "kind": "text"
+      }
+    ],
+    "calendar": [
+      {
+        "id": "cal-reunion",
+        "title": "今天 · 去见她",
+        "body": "初夏的太原，常去的甜品店。把藏了七年的话说出口。芝士蛋糕已点好。",
+        "kind": "event"
+      }
+    ],
+    "reminders": [
+      {
+        "id": "rem-confess",
+        "title": "提醒：今天一定要说出来",
+        "body": "不要再躲了。哪怕她只当我是同学，也要让她知道，这七年，我从未放下。",
+        "kind": "text"
+      }
+    ],
+    "phone": [
+      {
+        "id": "call-missed",
+        "title": "小水",
+        "body": "未接来电 · 16:05",
+        "kind": "call",
+        "meta": {
+          "phone": "13800001234"
+        }
+      },
+      {
+        "id": "voicemail",
+        "title": "语音留言 · 小水",
+        "body": "我到太原了，你在哪？手机怎么不接，回我电话。",
+        "kind": "audio",
+        "folder": "语音信箱"
+      },
+      {
+        "id": "call-her",
+        "title": "小水",
+        "body": "来电",
+        "kind": "call",
+        "meta": {
+          "phone": "13800001234"
+        }
+      }
+    ],
+    "mail": [
+      {
+        "id": "mail-label",
+        "title": "来自音乐厂牌：新单曲《初遇街口》已上线",
+        "body": "恭喜新作发布。附注：你说这首歌的灵感'等一个对的人听见'——祝早日等到的那天。",
+        "kind": "text"
       }
     ],
     "maps": [
       {
-        "id": "test-item-maps",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
+        "id": "map-cafe",
+        "title": "常去的甜品店",
+        "body": "太原 · 距当前位置 1.2 公里。备注：今天见面的地方，靠窗位置已留。",
+        "kind": "text"
       }
     ],
-    "weather": [
+    "safari": [
       {
-        "id": "test-item-weather",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
+        "id": "web-show",
+        "title": "书签：《登陆日》官宣舞台",
+        "body": "收藏了那场表演的回放。评论区有人写'这首歌像在告白'——只有我知道，是。",
+        "kind": "text"
       }
     ],
-    "wallet": [
+    "wechat": [
       {
-        "id": "test-item-wallet",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "health": [
-      {
-        "id": "test-item-health",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "find": [
-      {
-        "id": "test-item-find",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "calculator": [
-      {
-        "id": "test-item-calculator",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "settings": [
-      {
-        "id": "test-item-settings",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "weibo": [
-      {
-        "id": "test-item-weibo",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "redbook": [
-      {
-        "id": "test-item-redbook",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "douyin": [
-      {
-        "id": "test-item-douyin",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "bilibili": [
-      {
-        "id": "test-item-bilibili",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "alipay": [
-      {
-        "id": "test-item-alipay",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "taobao": [
-      {
-        "id": "test-item-taobao",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "netease": [
-      {
-        "id": "test-item-netease",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "delivery": [
-      {
-        "id": "test-item-delivery",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "forum": [
-      {
-        "id": "test-item-forum",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "instagram": [
-      {
-        "id": "test-item-instagram",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "tiktok": [
-      {
-        "id": "test-item-tiktok",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "twitter": [
-      {
-        "id": "test-item-twitter",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "youtube": [
-      {
-        "id": "test-item-youtube",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "snapchat": [
-      {
-        "id": "test-item-snapchat",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "facebook": [
-      {
-        "id": "test-item-facebook",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "reddit": [
-      {
-        "id": "test-item-reddit",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "spotify": [
-      {
-        "id": "test-item-spotify",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "netflix": [
-      {
-        "id": "test-item-netflix",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "pinterest": [
-      {
-        "id": "test-item-pinterest",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "threads": [
-      {
-        "id": "test-item-threads",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
+        "id": "post-1",
+        "title": "张子墨",
+        "body": "新歌《初遇街口》上线，写了好久。希望某个人能听到。",
+        "kind": "post",
+        "time": "2022-05-20 20:00",
+        "likes": 2331,
+        "comments": ["朋友3：又发糖", "小水：好听🎧"]
       },
       {
-        "id": "test-threads-message-1",
-        "title": "测试会话1",
-        "body": "这是一条测试消息。",
-        "sender": "测试联系人1",
-        "folder": "私信"
+        "id": "post-2",
+        "title": "张子墨",
+        "body": "今天又路过高中，教室还在。有些人，一直住在心里，七年了。",
+        "kind": "post",
+        "time": "2024-09-01 18:30",
+        "likes": 1890,
+        "comments": ["朋友3：去见她啊", "小水：❤️"]
       },
       {
-        "id": "test-threads-activity-1",
-        "title": "测试动态1",
-        "body": "这是一条测试回复动态。",
-        "sender": "测试用户1",
-        "meta": {
-          "activityType": "reply"
-        }
-      },
-      {
-        "id": "test-threads-message-2",
-        "title": "测试会话2",
-        "body": "这是一条测试消息。",
-        "sender": "测试联系人2",
-        "folder": "私信"
-      },
-      {
-        "id": "test-threads-activity-2",
-        "title": "测试动态2",
-        "body": "这是一条测试回复动态。",
-        "sender": "测试用户2",
-        "meta": {
-          "activityType": "reply"
-        }
-      },
-      {
-        "id": "test-threads-message-3",
-        "title": "测试会话3",
-        "body": "这是一条测试消息。",
-        "sender": "测试联系人3",
-        "folder": "私信"
-      },
-      {
-        "id": "test-threads-activity-3",
-        "title": "测试动态3",
-        "body": "这是一条测试回复动态。",
-        "sender": "测试用户3",
-        "meta": {
-          "activityType": "reply"
-        }
-      }
-    ],
-    "appstore": [
-      {
-        "id": "test-appstore",
-        "title": "测试内容",
-        "body": "这是一条测试内容。"
+        "id": "post-3",
+        "title": "张子墨",
+        "body": "她发了条朋友圈，狗狗好可爱。忍不住点了个赞。第七年，还是只敢这样靠近你。",
+        "kind": "post",
+        "time": "2026-04-18 22:10",
+        "likes": 4021,
+        "comments": ["朋友3：没救了", "小水：豆芽确实可爱"]
       }
     ]
   },
   "variables": {},
-  "events": [],
-  "tests": []
+  "events": [
+    {
+      "id": "welcome",
+      "label": "开机",
+      "type": "start",
+      "actions": [
+        {
+          "type": "notification",
+          "key": "",
+          "value": "微信：小水 发来消息"
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "语音留言：小水"
+        }
+      ]
+    },
+    {
+      "id": "evt-read-pw",
+      "label": "聊天里找到加密备忘录的密码",
+      "event": "read",
+      "target": "wx-pw-2",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "note-reunion",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "备忘录：一段加密笔记已解锁"
+        }
+      ]
+    },
+    {
+      "id": "evt-read-note-highschool",
+      "label": "读完「高中三年」",
+      "event": "read",
+      "target": "note-highschool",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "note-misunderstanding",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "备忘录：下一段回忆已解锁"
+        }
+      ],
+      "next": [
+        "evt-read-note-misunderstanding"
+      ]
+    },
+    {
+      "id": "evt-read-note-misunderstanding",
+      "label": "读完「误会与沉默」",
+      "event": "read",
+      "target": "note-misunderstanding",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "note-years",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "备忘录：再下一段回忆已解锁"
+        }
+      ],
+      "next": [
+        "evt-read-note-years"
+      ]
+    },
+    {
+      "id": "evt-read-note-years",
+      "label": "读完「大学四年」",
+      "event": "read",
+      "target": "note-years",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "photo-together",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "相册：一张合照已解锁"
+        }
+      ]
+    },
+    {
+      "id": "evt-read-note-reunion",
+      "label": "读出加密告白",
+      "event": "read",
+      "target": "note-reunion",
+      "actions": [
+        {
+          "type": "notification",
+          "key": "",
+          "value": "时间，回到初夏的那天下午"
+        }
+      ],
+      "next": [
+        "delay-reunion"
+      ]
+    },
+    {
+      "id": "delay-reunion",
+      "label": "时间来到重逢的下午",
+      "type": "delay",
+      "delayMs": 1000,
+      "actions": [
+        {
+          "type": "date",
+          "key": "",
+          "value": "2026-05-20"
+        },
+        {
+          "type": "time",
+          "key": "",
+          "value": "16:40"
+        },
+        {
+          "type": "call",
+          "key": "call-her",
+          "value": "小水"
+        }
+      ]
+    },
+    {
+      "id": "evt-call",
+      "label": "接听她的来电",
+      "event": "callAnswered",
+      "target": "call-her",
+      "next": [
+        "decision"
+      ]
+    },
+    {
+      "id": "decision",
+      "label": "七年心事，在此刻圆满",
+      "type": "choice",
+      "next": [
+        "ending-truth",
+        "ending-years",
+        "ending-future"
+      ]
+    },
+    {
+      "id": "ending-truth",
+      "label": "迟来的告白",
+      "type": "ending",
+      "actions": [
+        {
+          "type": "ending",
+          "key": "",
+          "value": "迟来的告白：太原的甜品店里，他望着你说'我高中喜欢你整整三年，以为你喜欢别人'。你眼眶发热：'我也喜欢你啊。'七年的误会，在初夏晚风里，烟消云散。"
+        }
+      ]
+    },
+    {
+      "id": "ending-years",
+      "label": "七年的心事",
+      "type": "ending",
+      "actions": [
+        {
+          "type": "ending",
+          "key": "",
+          "value": "七年的心事：手机里每一年的点赞、每一条动态、每一段备忘录，都是他没说出口的'我从未放下'。原来你们双向奔赴了那么久，如今终于在一起。"
+        }
+      ]
+    },
+    {
+      "id": "ending-future",
+      "label": "余生的温柔",
+      "type": "ending",
+      "actions": [
+        {
+          "type": "ending",
+          "key": "",
+          "value": "余生的温柔：他几秒不回就发来一堆碎碎念，一口一个'小宝、宝宝、老婆'。那个爱香水、爱撒娇的太原少年，把迟到七年的爱，补给了你的整个青春与余生。"
+        }
+      ]
+    }
+  ],
+  "tests": [
+    {
+      "name": "ending-truth",
+      "steps": [
+        {
+          "event": "read",
+          "target": "wx-pw-2"
+        },
+        {
+          "event": "read",
+          "target": "note-reunion",
+          "password": "1001"
+        },
+        {
+          "advanceMs": 1000
+        },
+        {
+          "event": "callAnswered",
+          "target": "call-her"
+        },
+        {
+          "choose": "ending-truth"
+        }
+      ],
+      "ending": "迟来的告白：太原的甜品店里，他望着你说'我高中喜欢你整整三年，以为你喜欢别人'。你眼眶发热：'我也喜欢你啊。'七年的误会，在初夏晚风里，烟消云散。",
+      "expectUnlocked": [
+        "note-reunion"
+      ]
+    },
+    {
+      "name": "ending-years",
+      "steps": [
+        {
+          "event": "read",
+          "target": "wx-pw-2"
+        },
+        {
+          "event": "read",
+          "target": "note-reunion",
+          "password": "1001"
+        },
+        {
+          "advanceMs": 1000
+        },
+        {
+          "event": "callAnswered",
+          "target": "call-her"
+        },
+        {
+          "choose": "ending-years"
+        }
+      ],
+      "ending": "七年的心事：手机里每一年的点赞、每一条动态、每一段备忘录，都是他没说出口的'我从未放下'。原来你们双向奔赴了那么久，如今终于在一起。",
+      "expectUnlocked": [
+        "note-reunion"
+      ]
+    },
+    {
+      "name": "ending-future",
+      "steps": [
+        {
+          "event": "read",
+          "target": "wx-pw-2"
+        },
+        {
+          "event": "read",
+          "target": "note-reunion",
+          "password": "1001"
+        },
+        {
+          "advanceMs": 1000
+        },
+        {
+          "event": "callAnswered",
+          "target": "call-her"
+        },
+        {
+          "choose": "ending-future"
+        }
+      ],
+      "ending": "余生的温柔：他几秒不回就发来一堆碎碎念，一口一个'小宝、宝宝、老婆'。那个爱香水、爱撒娇的太原少年，把迟到七年的爱，补给了你的整个青春与余生。",
+      "expectUnlocked": [
+        "note-reunion"
+      ]
+    }
+  ]
 }
